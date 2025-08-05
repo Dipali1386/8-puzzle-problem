@@ -7,6 +7,7 @@ The 8-Puzzle is played on a 3×3 grid containing 8 numbered tiles and one empty 
 ---
 
 ## BFS Pseudocode
+<pre>
 while Q is not empty:
     current ← front of Q
     Dequeue Q
@@ -22,8 +23,10 @@ while Q is not empty:
             Enqueue child into Q
 
 return FAILURE
+</pre>
 
 ## DFS Pseudocode
+<pre>
 DFS(state, goal, visited, depth_limit):
     if state == goal:
         return SUCCESS
@@ -39,4 +42,4 @@ DFS(state, goal, visited, depth_limit):
                 return SUCCESS
 
     return FAILURE
-
+</pre>
